@@ -1,4 +1,3 @@
-
 name = input("enter your first name: ")
 
 name2 = input("enter your last name: ")
