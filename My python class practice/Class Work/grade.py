@@ -1,8 +1,6 @@
 grade = input("enter your grade: ")
 
 grade = int (grade) 
-
-
 if grade >= 75 and grade == 100:
 	print("your score is A, Excellent student") 
 
