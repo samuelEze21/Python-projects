@@ -37,14 +37,14 @@ class BankTestCase(unittest.TestCase):
         self.assertEqual(2000.00, new_balance)
 
 
-
-    def testThat_when2kIsDeposited_ToAccount1_And_withdraw_1k_BalanceIs1k(self):
+    def testThat_when2k_isDeposited_ToAccount1_BalanceIs2k_AND_act1_can_Transfer_1k_to_account2(self):
         self.bank = Bank()
-        account = self.bank.create_new_account("David", "1111", 0.00)
-        new_balance = self.bank.deposit_to_account(2000, account.account_number)
+        account_1 = self.bank.create_new_account(" Basil peters", "7788", 0.00)
+        new_balance = self.bank.deposit_to_account(2000, account_1.account_number)
         self.assertEqual(2000.00, new_balance)
-        new_balance = self.bank.withdraw_from_account(1000,  account.account_number, "1111")
-        self.assertEqual(1000.00, new_balance)
+        account_2 = self.bank.create_new_account(" John King", "5566", 0.00)
+        new_balance_account_1_balance_account_2_balance  = self.bank.transfer(account_1.account_number, 1000, account_2.account_number, 1000)
+
 
 
 
