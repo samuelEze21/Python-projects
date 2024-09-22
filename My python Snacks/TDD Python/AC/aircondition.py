@@ -1,5 +1,12 @@
-def turn_on_ac(power_on, temperature):
-    if power_on and temperature >= 24: # check to see if power is on and temperature is active
+class AirCondition:
+
+    def __init__(self, is_power_on):
+        self.is_power_on = is_power_on
+
+
+
+def turn_on_ac(is_power_on, temperature):
+    if is_power_on and temperature >= 24: # check to see if power is on and temperature is active
         return True
 
 
@@ -22,7 +29,7 @@ def increase_temperature(temperature, decrease_cooling):
 
 def decrease_temperature(temperature, increase_cooling):
 
-    ac_ob = True
+    ac_on = True
 
     for temperature in range(24, 16):
         temperature -= temperature
