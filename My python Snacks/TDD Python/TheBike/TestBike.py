@@ -22,6 +22,30 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(True, turn_off_bike)
 
 
+    def test_that_the_bike_can_be_accelerated_by_gear_1(self):
+        accelerate_gear1 = bike.accelerate_gear1(self, True, "gear_1", 0)
+        self.assertEqual(1, accelerate_gear1)
+
+
+    def test_that_the_bike_can_be_accelerated_by_gear_2(self):
+        accelerate_gear2 = bike.accelerate_gear2(self, True, "gear_2", 21)
+        self.assertEqual(23, accelerate_gear2)
+
+    def test_that_the_bike_can_be_accelerated_by_gear_3(self):
+        accelerate_gear3 = bike.accelerate_gear3(self, True, "gear_3", 31)
+        self.assertEqual(34, accelerate_gear3)
+
+
+    def test_that_the_bike_can_be_accelerated_by_gear_4(self):
+        accelerate_gear4 = bike.accelerate_gear4(self, True, "gear_4", 41)
+        self.assertEqual(45, accelerate_gear4)
+
+
+
+
+
+
+
 
 
 
